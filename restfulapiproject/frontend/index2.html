@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Get API</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <nav class='navbar'>
+                <a class='nav-branding'>Indian Movie API</a>
+                <ul class='nav-menu'>
+                    <li class='nav-link'><a href="index.html">Home</a></li>
+                    <li class='nav-link'><a href="index2.html">Get an API</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="title-section">
+        <h1>Welcome to the Indian Movie API</h1>
+        <p>Explore a vast collection of movies from Hindi and Telugu languages.</p>
+    </div>
+
+    <div class = "container">
+        <center>
+            <h2>Enter your filters below.</h2>
+        </center>
+
+        <br>
+
+        <div class = "columns">
+            <div class = "column">   
+                <label for="languageSelection" class = "labelSize">Choose a language:</label>
+                <select name="languageSelection" id="languageSelection" class = 'select'>
+                    <option value="all">All Languages</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+    
+            <div class = "column">   
+                <label for="yearSelection" class = 'labelSize'>Enter a year:</label>
+                <input type="number" id="yearSelection" name="yearSelection" min="1951" max="2024" class = "year" step = '1' placeholder = " All Years">
+            </div>
+    
+            <div class = "column">   
+                <label for="ratingSelection" class = 'labelSize'>Enter a rating:</label>
+                <input type="number" id="ratingSelection" name="ratingSelection" min="0" max="10" class = "year" step = '0.1' placeholder = " All Ratings">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class = "container">
+        <h2 id = "url"></h2>
+    </div>
+
+    <div class = "container">
+        <center>
+            <h2>Data Preview</h2>
+        </center>
+        <div id="dataPreview"></div>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>

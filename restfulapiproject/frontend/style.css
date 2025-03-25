@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    background-color: #ffe3f5;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #c91682;
+    z-index: 1000;
+}
+li{
+    list-style: none;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+.navigation{
+    width: 1280px;
+    margin:auto;
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding{
+    font-size: 1.5rem;
+}
+
+#bannerimage {
+    position: relative;
+    width: 100%;
+    height: 405px;
+    background-image: url("introimg.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#bannertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 75px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #c91682;
+}
+
+.container{
+    position: relative;
+    background-color: #FFB6C1;
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4; 
+    box-shadow: 0px 0px 10px #901858 ;
+}
+
+.container ul {
+    list-style-type: disc; /* Ensures bullet points are visible */
+    padding-left: 20px; /* Adds space for bullets */
+    text-align: left; /* Aligns text properly */
+}
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+.column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.button{
+    background-color: #c91682;
+    margin-top: 10px;
+    padding: 14px 40px;
+    font-size: 12px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #8b0f5a;
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+    background-color: #8b0f5a;
+    color: white;
+}
+
+.title-section {
+    margin-top: 90px;
+    text-align: center;
+    color: #c91682;
+    padding: 20px;
+}
+
+.title-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title-section p {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #8b0f5a;
+    margin-top: 5px;
+}
+
+.select, .year, .rating{
+    width: 200px;
+    font-size: 1.15rem;
+    border-radius: 8px;
+    background-color: #E37383;
+    margin-left: 2px;
+}
+
+.select option{
+    background-color: #e9919e;
+}
+
+.labelSize{
+    font-size: 1.2rem;
+}
+
+input::placeholder {
+    color: black;
+}

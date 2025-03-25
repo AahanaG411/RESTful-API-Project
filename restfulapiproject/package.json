@@ -1,0 +1,15 @@
+{
+  "name": "movieproject",
+  "version": "1.0.0",
+  "description": "this project will contain information about telugu and hindi projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aahana gorantla",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  }
+}
